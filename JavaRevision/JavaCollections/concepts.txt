@@ -1,0 +1,42 @@
+Java collection framework:
+        Collection:              Map:     Iterator:
+List    Set:         Queue:    SortedMap  ListIterator
+        SortedSet    Deque
+
+Collection Interface is the root interface of the collections framework hierarchy.
+Java does not provide direct implementations of the Collection interface but provides
+implementations of its subinterfaces like List, Set, and Queue.
+Collection methods:
+add()
+size()
+remove()
+iterator()
+addAll()
+removeAll()
+clear()
+*----------*
+->List: implementations includes these classes...
+                                 ArrayList
+                                 LinkedList
+                                 Vector
+                                 Stack
+List has ordered elements.
+
+->Set: provides features of the mathematical set in java. Sets cannot contain duplicate items.
+Classes for set interface are:
+                                HashSet
+                                LinkedHashSet
+                                EnumSet
+                                TreeSet
+->Queue Interface: provides functionality of queue datastructure(fifo_first in first out.)
+Classes for queue are:
+                        ArrayDeque
+                        LinkedList
+                        PriorityQueue
+->Map Interface: provides functionlaity of the map datastructure(those with key value pair).
+Using below classes:
+                    HashMap (important)
+                    EnumMap
+                    LinkedHashMap
+                    WeakHashMap
+                    TreeMap (important)

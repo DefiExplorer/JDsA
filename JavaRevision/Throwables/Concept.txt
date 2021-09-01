@@ -1,0 +1,29 @@
+Exception is an error event that can happen during the execution of a program and disrupts its
+normal flow.
+Exceptions in java can arise from different kind of situations such as wrong data entered by user,
+hardware failure, network failure, Database server down, etc.
+Java provides a robust and object oriented way to handle exception scenarios, known as Java Exception Handling.
+
+try and catch keywords are used for defining new exceptions.
+try{//Code that runs}
+catch(ExceptionType variable_name){
+    //Message to be displayed or action to be taken.
+}
+-> By default the program exits.
+-> But using the above try-catch block to handle the exception and telling
+program what to do next, code can continue despite of error(s).
+*Java keeps the stack trace.
+
+We have finally keyword that runs no matter exception is caught or not.
+->throw keyword is used to explicitly declare which exceptions are thrown from a method or any block of code.
+
+throw new ExceptionName("Any_Message_String");
+
+->throws keyword: used in the signature of method to indicate that this method might throw one of the
+listed type exceptions. The caller to this methods has to handle the exception using a try-catch block.
+
+try{}
+catch(Exception e){}
+finally{}
+//
+The finally block always executes when the try block exits. So you can use finally without catch but you must use try.

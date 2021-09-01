@@ -1,0 +1,30 @@
+With help of interface we can achieve total abstraction.
+Java doesn't support multiple inheritance by using class, so we achieve
+the functionaity of multiple inheritence by using interfaces.
+-> An interface can be implemented using implements keyword. Inteface can extend another
+java interface only using extends keyword.
+-> Class can also implement an interface using implements keyword.
+-> Interface has only static and final variable.
+-> Interface can't provide implementation of an abstact class.
+----x----
+Functions or methods defined in interfaces are by default all abstract.
+So, class that implements the interface must override all the methods.
+-> Since, we know final doesn't allow overriding, the attributes in an interface is final not the method,
+so overriding method is possible.
+
+Important:
+-> You cannot instantiate an interface, object creation is possible but it can hold object of class that implements
+that interface.
+Example: -
+Youtuber obj = new Youtuber(); //Not Possible
+
+Person() obj1 = new Person();
+Youtuber obj = obj1;//Possible upcasting
+
+*The point to note is that obj is restricted to functionality of Youtuber only and not Student even though
+out class implements both Youtuber and Student.*
+
+-> Interfaces dont have any default constructor so instantiation is not possible.
+//For Java version> Java 8...
+Interfaces are able to have concrete methods, which may lead to diamond problem.
+To solve this there's a way provided by the java developers.

@@ -1,0 +1,3 @@
+Dont know why the program is giving error, maybe coz of editor
+configurations.
+But the inheritance program is in itself correct.

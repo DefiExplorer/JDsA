@@ -1,0 +1,16 @@
+super keyword:
+It can be used to access the immediate parent class without creating an object.
+This keyword is used by the subclass whenever it need to refer to its immediate
+super(or parent) class.
+\\
+Note: - 
+If constructor is overloaded in the parent class A, then in child class B
+we will need to redefine the constructor before using super keyword.
+//Singleton:
+-->Singleton pattern is mostly used in multi-threaded and database applications. It is used in logging, caching,
+thread pools, configuration settings etc.
+
+-Caching is related to how cpu cache memory works.
+-Logging means to store the events as they happen in a log file.
+--How to implement this:
+*see program 

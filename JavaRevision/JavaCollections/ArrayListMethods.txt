@@ -1,0 +1,14 @@
+add(element)
+addAll(another_collection)
+get(index)
+set(index,value)
+remove(index)
+removeAll(Any_sub_Array)
+clear()
+size(): returns int
+contains(element): performs check
+isEmpty()
+toArray(): coverts list to array of Object type
+         : or We want toArray() to return any other type, we do this the following way-
+              String temp[] = new String[mention_size];
+              arr1.toArray(temp); //Now it is not Object type but String

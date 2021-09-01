@@ -1,0 +1,1 @@
+This repo contains codes and core concepts of my final year pre-placement preparations.

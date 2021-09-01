@@ -1,0 +1,44 @@
+/*Encapsulation:
+Process of wrapping code and data together into a single unit. The data in a class is hidden from
+other classes, so it is also known as data-hiding.
+*/
+//Access Modifiers and Package
+/*Java package is group of similar type of classes, interfaces and sub-packages.
+There are many built-in packages such as java, lang, awt, javax, swing, net, io,
+util, sql etc.
+
+Access modifiers provides way to give access to program. These are->
+
+Public: From anywhere.
+Private: Only within the class.
+Protected: Only within the package, outside the package only through the child class.
+Default: Only within the package, cannot be accessed from outside the package in any way.
+        This is by default access modifier if others are not used.
+
+Suppose:
+Movies-->
+        Types-->
+                Bollywood
+                Hollywood
+                Anime
+                        --> Action
+                            Romance
+                            Drama
+                            Haunted
+To access any package we just do:
+
+package Movies.Types.Bollywood
+
+Suppose the above packages consists of classes of various genre, then to use
+that class in other class, we do:
+
+import Movies.Types.Bollywood.Romance;
+
+If we need to use all genre, then:
+
+import Movies.Types.Bollywood.*;
+
+*/
+To achieve Encapsulation: -
+1. Declare the variables of a class as Private
+2. Provide public setter and getter methods that will be used to write and read variables values.

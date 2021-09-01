@@ -1,0 +1,26 @@
+Final Keyword:
+
+-> A final variable cannot be changed.
+-> A final method cannot be overridden.
+-> A final class cannot be extended, no further child class is possible.
+...
+Final Keyword can only be initialised once, and it is must to do so otherwise
+compile time error occurs.
+Final variable must be all Capital for good practice.
+Final variable which isn't initialised is called Blank final while declaration, but always initialise
+it before use.
+In case of reference final variable, the internal state of the object pointed by that reference variable can be changed.
+class Student{
+    String name;
+    int age;
+}
+suppose: -
+Student n1 = new Student();
+Student n2 = new Student();
+final Student n3 = new Student();
+final Student n4 = new Student();
+
+n1 = n2;//No error_reference change
+n3 = n2;//Compiler error
+
+n4.name="Rahul";//Internal state change possible.

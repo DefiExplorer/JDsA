@@ -1,0 +1,30 @@
+static keyword
+static is only related to class and not objects.
+It indicates that the particular member belongs to itself, rather than an instance of
+that type. It is mainly used to help memory management.
+The keyword can be applied to variables, methoda, blocks and nested class.
+
+Static keeps the value unchanged for all objects.
+
+Like for class Person(){
+    String name;
+    static String planet;
+} with objects person1, person2..so on
+the name cannot be static becoz each person may have diff name.
+But the planet can be static as all persons are on same planet Earth.
+
+Parent must be static if child is declared static.
+Top-level class cannot be static, but nested class can be.
+
+Importance of static in nested class.
+Consider class A with 2 more class B and class C.
+class C is static class while class B is not.
+For us to create an object of class B we need to create object of class A.
+For us to create an object of class C we don't need to create an object of class A.
+We can say B is tightly coupled with A while C isn't.
+
+static-blocks: These blocks of code execute before the main function.
+We can create static blocks just like this:
+static {
+    //Your code here
+}
